@@ -1409,7 +1409,7 @@
         </div>
         <div class="term-card">
           <div class="term-name">마스킹</div>
-          <div class="term-desc">이름·전화번호 같은 개인정보를 다른 표현으로 가리는 것입니다.<br/><br/><strong>예시:</strong><br/>· 홍길동 → 고객 A<br/>· 010-1234-5678 → 010-****-****</div>
+          <div class="term-desc">이름·전화번호 같은 개인정보를 다른 표현으로 가리는 것입니다.<br/><br/><strong>예시:</strong><br/>· 고객 실명 → 고객 A<br/>· 010-****-**** → 010-****-****</div>
         </div>
         <div class="term-card">
           <div class="term-name">MFA (2단계 인증)</div>
@@ -1504,12 +1504,12 @@
         <div class="principle-card">
           <div class="principle-num">RULE 02</div>
           <h3>인증정보는 어떤 AI에도 입력하지 않습니다</h3>
-          <p>비밀번호·API Key·Token은 어떤 AI에도 입력하지 않습니다. 인증정보는 Vault 등 별도 보관소를 사용합니다.<br/><br/>민감정보 관련 문의는 <strong>Slack #help_it</strong>으로 부탁드립니다.</p>
+          <p>비밀번호·API Key·Token은 어떤 AI에도 입력하지 않습니다. 인증정보는 Vault 등 별도 보관소를 사용합니다.<br/><br/>민감정보 관련 문의는 <strong>사내 헬프 채널</strong>으로 부탁드립니다.</p>
         </div>
         <div class="principle-card">
           <div class="principle-num">RULE 03</div>
           <h3>민감한 정보는 먼저 가립니다</h3>
-          <p>개인정보·고객정보·계약정보는 그대로 입력하지 않습니다. 필요한 경우 이름·번호 등을 다른 표현으로 바꿔 사용합니다.<br/><br/><strong>예시:</strong><br/>· 홍길동 → 고객 A<br/>· 전화번호 → 010-****-****</p>
+          <p>개인정보·고객정보·계약정보는 그대로 입력하지 않습니다. 필요한 경우 이름·번호 등을 다른 표현으로 바꿔 사용합니다.<br/><br/><strong>예시:</strong><br/>· 고객 실명 → 고객 A<br/>· 전화번호 → 010-****-****</p>
         </div>
         <div class="principle-card">
           <div class="principle-num">RULE 04</div>
@@ -1633,7 +1633,7 @@
       </div>
 
       <div class="info-box" style="margin-top:32px;">
-        💬 <strong>민감정보 관련 문의 :</strong> 등급 판단이 모호하거나 처리 방법이 확실하지 않은 경우, Slack <strong>#help_정보보안</strong> 채널로 문의 부탁드립니다.
+        💬 <strong>민감정보 관련 문의 :</strong> 등급 판단이 모호하거나 처리 방법이 확실하지 않은 경우, 사내 정보보안 채널 채널로 문의 부탁드립니다.
       </div>
     </section>
 
@@ -1654,7 +1654,7 @@
           <div class="scenario-body">
             <div class="scenario-case bad">
               <span class="case-label bad">나쁜 예</span>
-              <div class="case-input">"홍길동 고객(010-1234-5678, 예약번호 AB123456)이 환불 요청한 사례 정리해줘"</div>
+              <div class="case-input">"고객 A(010-****-****, 예약번호 ******)이 환불 요청한 사례 정리해줘"</div>
               <div class="case-result">→ 개인정보가 외부로 전송되어 위수탁 미체결로 법적 문제가 발생할 수 있습니다.</div>
             </div>
             <div class="scenario-case good">
@@ -1844,7 +1844,7 @@
               <li><span class="step-num">03</span><div><strong>응답 사실 확인</strong>: 숫자·법령·인용·링크는 원본 출처에서 다시 확인합니다. AI 응답은 틀릴 수 있습니다.</div></li>
               <li><span class="step-num">04</span><div><strong>외부 문서 분석 시 주의</strong>: 웹페이지·이메일·문서에 숨겨진 지시문이 Claude의 동작을 바꿀 수 있습니다. 응답이 이상하면 즉시 중단합니다.</div></li>
               <li><span class="step-num">05</span><div><strong>등급별 사용</strong>: 기밀·개인정보를 다루는 작업은 사용 전 정보보안실과 상의합니다.</div></li>
-              <li><span class="step-num">06</span><div><strong>이상 시 신고</strong>: 의심스러운 응답·계정 도용 의심·정보 유출 우려가 있으면 Slack <strong>#help_정보보안</strong>으로 즉시 신고합니다.</div></li>
+              <li><span class="step-num">06</span><div><strong>이상 시 신고</strong>: 의심스러운 응답·계정 도용 의심·정보 유출 우려가 있으면 사내 정보보안 채널으로 즉시 신고합니다.</div></li>
             </ul>
           </div>
         </div>
@@ -2067,7 +2067,7 @@
           <h3 style="margin-bottom:12px;color:var(--ap-deep);">사용법·설정·승인 요청</h3>
           <p style="font-size:14px;line-height:1.65;color:var(--ap-text);margin-bottom:18px;">AI 도구 사용법, 설정 방법, 새 커넥터 승인 요청 등 일반 문의를 받습니다.</p>
           <div style="display:inline-flex;align-items:center;gap:10px;background:var(--ap-blue);color:white;padding:12px 20px;border-radius:10px;font-family:var(--font-mono);font-weight:600;font-size:14px;">
-            <span>Slack</span><span>·</span><span>#help_it</span>
+            <span>Internal Help Channel</span>
           </div>
         </div>
         <div style="background:linear-gradient(135deg,var(--status-stop-bg),white);border:2px solid var(--status-stop);border-radius:14px;padding:32px;">
@@ -2075,7 +2075,7 @@
           <h3 style="margin-bottom:12px;color:var(--status-stop);">유출 의심 · 사고 신고</h3>
           <p style="font-size:14px;line-height:1.65;color:var(--ap-text);margin-bottom:18px;">민감정보 유출 의심, 권한 오류, 의심스러운 응답 등 보안 사고를 신고합니다.</p>
           <div style="display:inline-flex;align-items:center;gap:10px;background:var(--status-stop);color:white;padding:12px 20px;border-radius:10px;font-family:var(--font-mono);font-weight:600;font-size:14px;">
-            <span>Slack</span><span>·</span><span>#help_정보보안</span>
+            <span>Internal Security Channel</span>
           </div>
         </div>
       </div>
@@ -2103,8 +2103,8 @@
         <div class="footer-col">
           <h5>Contact · 문의</h5>
           <p>
-            AI 관련 문의: Slack #help_it<br/>
-            정보유출 신고: Slack #help_정보보안
+            AI 관련 문의: 사내 헬프 채널<br/>
+            정보유출 신고: 사내 정보보안 채널
           </p>
         </div>
       </div>
