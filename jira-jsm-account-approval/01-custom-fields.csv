@@ -1,0 +1,8 @@
+field_name,jira_field_type,required,searcher,context,description,allowed_values,default_value
+부서,Select List (single choice),Yes,Select List Searcher,Project: ACCT,요청자 소속 부서. ISMS 감사 시 부서 단위 통계용.,"운영실,개발실,사업실,경영지원실,정보보안실,기타",
+직속 리더,User Picker (single user),Yes,User Picker Searcher,Project: ACCT,1차 결재자. 요청자가 매 요청마다 본인의 직속 리더를 직접 지정.,(any active user),
+시스템,Select List (single choice),Yes,Select List Searcher,Project: ACCT,요청 대상 시스템. Request Type 별 자동 셋팅 (read-only on portal).,"HIWARE,M365,OKTA,Slack,CrowdStrike,Cloudflare,Datadog,기타",
+카테고리,Select List (single choice),Yes,Select List Searcher,Project: ACCT,요청 유형. ISMS 통제 분류 키.,"계정생성,계정삭제,계정수정,권한부여,기타작업",
+신청 사유,Text Field (multi-line),Yes,Free Text Searcher,Project: ACCT,요청 배경·업무상 필요성. ISMS 감사 시 핵심 증빙. 최소 20자 권장.,(free text),
+적용 희망일,Date Picker,Yes,Date Range Picker,Project: ACCT,권한 부여/회수 효력 발생 희망일.,(date),
+회수 예정일,Date Picker,No,Date Range Picker,Project: ACCT,임시 권한일 경우 자동 회수 트리거 일자. 비워두면 영구 권한으로 간주.,(date),
